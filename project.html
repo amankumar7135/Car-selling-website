@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>CAR BOOKING</title>
+        <style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"proppins",sans-serif;
+}
+.header
+{
+    width:100%;
+    height:100vh;
+    background-image:url(nii.jpg);
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode:multiply;
+    background-position:center;
+    background-size:cover;
+    padding:0 7%;
+    transition:background-image 1s;
+
+}
+nav
+{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+.logo
+{
+    width:320px;
+    cursor:pointer;;
+}
+nav ul{
+    flex:1;
+    text-align:center;
+
+}
+nav ul li{
+    display:inline-block;
+    margin:10px 20px;
+
+}
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+
+}
+nav .btn
+{
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #fff;
+    padding:10px 30px;
+    border-radius:30px;
+    margin:7%;
+}
+.info
+{
+    width:100%;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    position:fixed;
+    bottom:50px;
+    left:0;
+}
+.info div{
+    margin:0 20px;
+}
+.info div h2
+{
+    font-size:44px;
+    font-weight:400px;
+}
+.info .line
+{
+    flex:1;
+    background:#fff;
+    height:4px;
+
+}
+        </style>
+    </head>
+    <body>
+<div class="header" id="header">
+    <nav>
+        <img src="logo.jpg" calss="logo">
+        <ul>
+            <li><a href="#" id="models">ModelS</a></li>
+            <li><a href="#" id="model3">Model3</a></li>
+            <li><a href="#" id="modelx">ModelX</a></li>
+            <li><a href="#" id="modely">ModelY</a></li>
+        </ul>
+        <a href="file:///C:/Users/hp/Documents/form%20for%20project.html" class="btn">Book Now</a>
+    </nav>
+
+    <div class="info">
+        <div>
+            <h2 id="a">1.9 s</h2>
+            <p>60mph</p>
+        </div>
+        <div>
+            <h2 id="b">200mph</h2>
+            <p>Top speed</p>
+        </div>
+        <div>
+            <h2 id="c">396 mi</h2>
+            <p>Max Range</p>
+        </div>
+        <div class="line">
+
+        </div>
+        <div>
+            <h2 id="model">model S</h2>
+        </div>
+    </div>
+</div>
+<script>
+    var header = document.getElementById("header");
+    var ms = document.getElementById("models");
+    var m3 = document.getElementById("model3");
+    var mx = document.getElementById("modelx");
+    var my = document.getElementById("modely");
+    var ma = document.getElementById("a");
+    var mb = document.getElementById("b");
+    var mc = document.getElementById("c");
+
+    ms.onclick = function()
+    {
+        header.style.backgroundImage = "url(istockphoto-1208828250-612x612.jpg)";
+        model.innerHTML ="model S";
+
+    }
+    m3.onclick = function()
+    {
+        header.style.backgroundImage ="url(istockphoto-586086492-612x612.jpg)";
+        model.innerHTML ="model 3";
+        
+        
+    }
+    mx.onclick = function()
+    {
+        header.style.backgroundImage = "url(carrrrrr.jpg)";
+        model.innerHTML ="model X";
+        
+        
+    }
+    my.onclick = function()
+    {
+        header.style.backgroundImage = "url(cae.jpg)";
+        model.innerHTML ="model Y";
+
+        
+        
+    }
+
+</script>
+    </body>
+</html>
